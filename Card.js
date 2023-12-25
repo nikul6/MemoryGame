@@ -11,7 +11,7 @@ export default function Card({ item, id, handleStatus }) {
             ]}
             onPress={() => handleStatus(id)}>
             <View style={styles.cardImage}>
-                <Text style={{ textAlign: 'center', fontSize: 50, color:'#000'}}>{item.data}</Text>
+                <Text style={{ textAlign: 'center', fontSize: 50, color: item.isVisible ? "#000" : '#fff' }}>{item.data}</Text>
             </View>
         </TouchableOpacity>
     )
